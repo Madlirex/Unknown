@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "name": "MainMenuActions",
+    "maps": [
+        {
+            "name": "Menu",
+            "id": "6b15efbb-6cc9-408f-af00-0f008fda1f82",
+            "actions": [
+                {
+                    "name": "Start",
+                    "type": "Button",
+                    "id": "75027649-7ac2-4e17-94ff-b03c020cf3d7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "64440fed-8730-4acc-ba76-b16d740d33f2",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Start",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
