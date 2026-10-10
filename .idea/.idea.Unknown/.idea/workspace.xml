@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1f16801-0869-4c6d-9f8e-b96daf083422" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Scripts/MainMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/Scripts/MainMenuManager.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c1f16801-0869-4c6d-9f8e-b96daf083422" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +25,9 @@
     &quot;accountId&quot;: &quot;49e08548-2ae1-4afa-a738-36f040549be5&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/MainMenu/MainMenuActions.inputactions" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5,
   &quot;fromUser&quot;: false
