@@ -16,11 +16,11 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 51e867510d048e24ab7b6c2d005bbb25
   m_Entries:
   - m_Id: 152924667904
-    m_Key: start_txt_presskey
+    m_Key: intro_txt_presskey
     m_Metadata:
       m_Items: []
   - m_Id: 814345437184
-    m_Key: start_txt_welcome
+    m_Key: intro_txt_welcome
     m_Metadata:
       m_Items: []
   m_Metadata:
