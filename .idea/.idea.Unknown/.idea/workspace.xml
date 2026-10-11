@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1f16801-0869-4c6d-9f8e-b96daf083422" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Slovak (sk).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Slovak (sk).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Global/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Global/DefaultVolumeProfile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Global/Fonts/Anton-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Global/Fonts/Anton-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Global/Scripts/ThemeApplier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Global/Scripts/ThemeApplier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Scripts/IntroTypingSequence.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Scripts/IntroTypingSequence.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Scripts/MainMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/Scripts/MainMenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Translations/MainMenu Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/Translations/MainMenu Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Translations/MainMenu_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/Translations/MainMenu_en.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Translations/MainMenu_sk.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/Translations/MainMenu_sk.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

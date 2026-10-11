@@ -36,18 +36,18 @@ public class ThemeApplier : MonoBehaviour
 
     public void RefreshAllVisuals()
     {
-        if (ThemeManager.Instance.ActiveTheme == null) return;
+        if (!ThemeManager.Instance.ActiveTheme) return;
         
         foreach (var group in colorBindings)
         {
             Color targetColor = ThemeManager.GetColor(group.role);
             
-            foreach (var img in group.targetImages.Where(img => img != null))
+            foreach (var img in group.targetImages.Where(img => img))
             {
                 img.color = targetColor;
             }
 
-            foreach (var txt in group.targetTexts.Where(txt => txt != null))
+            foreach (var txt in group.targetTexts.Where(txt => txt))
             {
                 txt.color = targetColor;
             }

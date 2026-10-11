@@ -20,7 +20,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 814345437184
-    m_Key: intro_txt_welcome
+    m_Key: main_txt_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366314636263424
+    m_Key: main_txt_play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366388527316992
+    m_Key: main_txt_settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366439064485888
+    m_Key: main_txt_exit
     m_Metadata:
       m_Items: []
   m_Metadata:

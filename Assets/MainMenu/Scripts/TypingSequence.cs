@@ -3,27 +3,41 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Localization;
-using UnityEngine.UI;
+using UnityEngine.Events;
 
-public class IntroTypingSequence : MonoBehaviour
+public class TypingSequence : MonoBehaviour
 {
-    [SerializeField] private GameObject introMenu;
-    [SerializeField] private GameObject mainMenu;
-    
-    [SerializeField] private Image panelImage;
     [SerializeField] private TMP_Text typingText;
 
     [SerializeField] private LocalizedString targetString;
     private string _targetString;
     private string _currentString = "";
 
-    [SerializeField] private float delay = 5f;
+    [SerializeField] private float doneDelay = 2f;
+
+    [Header("Color Roles")]
+    [SerializeField] private ColorRole baseRole = ColorRole.Text;
+    [SerializeField] private ColorRole typingRole = ColorRole.TypingText;
+    [SerializeField] private ColorRole doneRole = ColorRole.CorrectText;
+    
+    [SerializeField] private UnityEvent<TypingSequence> doneEvent;
+    
     public void Awake()
     {
         _targetString = typingText.text.ToLower();
     }
 
     public void OnEnable()
+    {
+        EnableTyping();
+    }
+
+    public void OnDisable()
+    {
+        DisableTyping();
+    }
+
+    public void EnableTyping()
     {
         if (Keyboard.current != null)
         {
@@ -33,7 +47,7 @@ public class IntroTypingSequence : MonoBehaviour
         targetString.StringChanged += ChangeTargetString;
     }
 
-    public void OnDisable()
+    public void DisableTyping()
     {
         if (Keyboard.current != null)
         {
@@ -43,15 +57,35 @@ public class IntroTypingSequence : MonoBehaviour
         targetString.StringChanged -= ChangeTargetString;
     }
 
+    public void ResetText()
+    {
+        typingText.color = ThemeManager.GetColor(baseRole);
+        typingText.text = _targetString;
+        _currentString = "";
+    }
+
+    public IEnumerator DelayDone()
+    {
+        typingText.color = ThemeManager.GetColor(doneRole);
+        typingText.text = _targetString;
+
+        yield return new WaitForSeconds(doneDelay);
+        ResetText();
+    }
+    
+    public IEnumerator DelayDone(float time)
+    {
+        typingText.color = ThemeManager.GetColor(doneRole);
+        typingText.text = _targetString;
+
+        yield return new WaitForSeconds(time);
+        ResetText();
+    }
+    
     private void ChangeTargetString(string value)
     {
         _targetString = value.ToLower();
-        ProgressStartMenu('}');
-    }
-    
-    public void SwitchToEnglish()
-    {
-        StartCoroutine(MainMenuManager.SwitchLocale("en"));
+        ProgressStartMenu('\0');
     }
     
     public void ProgressStartMenu(char key)
@@ -79,37 +113,17 @@ public class IntroTypingSequence : MonoBehaviour
             _currentString = "";
         }
         
-        string hexColor = ColorUtility.ToHtmlStringRGB(ThemeManager.Instance.ActiveTheme.typingText);
+        string hexColor = ColorUtility.ToHtmlStringRGB(ThemeManager.GetColor(typingRole));
         
         if (_currentString.Length == _targetString.Length)
         {
             typingText.text = $"<color=#{hexColor}>{_currentString}</color>";
-            StartCoroutine(ExitStartMenu());
+            doneEvent.Invoke(this);
         }
         else
         {
             string remainingString = _targetString[_currentString.Length..];
             typingText.text = $"<color=#{hexColor}>{_currentString}</color>{remainingString}";
         }
-    }
-
-    public IEnumerator ExitStartMenu()
-    {
-        if (Keyboard.current != null)
-        {
-            Keyboard.current.onTextInput -= ProgressStartMenu;
-        }
-
-        targetString.StringChanged -= ChangeTargetString;
-        
-        typingText.color = ThemeManager.Instance.ActiveTheme.correctText;
-        typingText.text = _targetString;
-
-        yield return new WaitForSecondsRealtime(delay);
-        
-        introMenu.SetActive(false);
-        mainMenu.SetActive(true);
-        
-        ThemeManager.Instance.ToggleDarkMode(!ThemeManager.Instance.IsDarkMode);
     }
 }

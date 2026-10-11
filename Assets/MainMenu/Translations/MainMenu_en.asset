@@ -23,7 +23,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 814345437184
-    m_Localized: Welcome
+    m_Localized: Unknown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366314636263424
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366388527316992
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366439064485888
+    m_Localized: Exit
     m_Metadata:
       m_Items: []
   references:
