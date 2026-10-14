@@ -38,6 +38,38 @@ MonoBehaviour:
     m_Localized: "Od\xEDs\u0165"
     m_Metadata:
       m_Items: []
+  - m_Id: 1589263087255552
+    m_Localized: Nastavenia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1589339775909888
+    m_Localized: "Cel\xE1 obrazovka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1589433803816960
+    m_Localized: Jazyk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1589497288802304
+    m_Localized: "Hlasitos\u0165"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1589571007889408
+    m_Localized: "Rozl\xED\u0161enie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1589645398065152
+    m_Localized: Kvalita Grafiky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1589786976796672
+    m_Localized: "Sp\xE4\u0165"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1590192314335232
+    m_Localized: "Nejak\xE9 menu hry"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

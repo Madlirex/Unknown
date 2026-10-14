@@ -31,6 +31,11 @@ public class MainMenuManager : MonoBehaviour
     {
         InputControls.Disable();
     }
+
+    public void ExitApplication()
+    {
+        Application.Quit();
+    }
     
     public void SetMenu(GameObject menu)
     {
