@@ -70,6 +70,10 @@ MonoBehaviour:
     m_Localized: Sum play menu
     m_Metadata:
       m_Items: []
+  - m_Id: 3388216262868992
+    m_Localized: Just play
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

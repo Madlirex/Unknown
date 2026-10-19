@@ -67,6 +67,10 @@ MonoBehaviour:
     m_Key: play_txt_title
     m_Metadata:
       m_Items: []
+  - m_Id: 3388216262868992
+    m_Key: play_btn_play
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

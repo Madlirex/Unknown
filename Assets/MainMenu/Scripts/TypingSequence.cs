@@ -63,6 +63,16 @@ public class TypingSequence : MonoBehaviour
         typingText.text = _targetString;
         _currentString = "";
     }
+    
+    public void StartDelayDone()
+    {
+        StartCoroutine(DelayDone());
+    }
+    
+    public void StartDelayDone(float time)
+    {
+        StartCoroutine(DelayDone(time));
+    }
 
     public IEnumerator DelayDone()
     {

@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1f16801-0869-4c6d-9f8e-b96daf083422" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Global/Fonts/Anton-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Global/Fonts/Anton-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Global/Scripts/ThemeApplier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Global/Scripts/ThemeApplier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Global/Settings/Scenes/URP2DSceneTemplate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Global/Settings/Scenes/URP2DSceneTemplate.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Scripts/MainMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/Scripts/MainMenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Scripts/TypingSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/Scripts/TypingSequence.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

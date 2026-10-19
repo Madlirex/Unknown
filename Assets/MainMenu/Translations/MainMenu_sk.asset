@@ -70,6 +70,10 @@ MonoBehaviour:
     m_Localized: "Nejak\xE9 menu hry"
     m_Metadata:
       m_Items: []
+  - m_Id: 3388216262868992
+    m_Localized: Proste hraj
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

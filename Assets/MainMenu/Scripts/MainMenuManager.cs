@@ -1,8 +1,8 @@
 using System.Collections;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
+using UnityEngine.SceneManagement;
 
 
 public class MainMenuManager : MonoBehaviour
@@ -60,6 +60,11 @@ public class MainMenuManager : MonoBehaviour
         ThemeManager.Instance.ToggleDarkMode(!ThemeManager.Instance.IsDarkMode);
     }
 
+    public void LoadScene(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
+    
     public void SwitchLocale(string localeCode)
     {
         StartCoroutine(SwitchLocaleCoroutine(localeCode));

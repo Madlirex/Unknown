@@ -13,6 +13,7 @@ public class ColorTargetGroup
     [Header("Target Components")]
     public List<Image> targetImages = new();
     public List<TextMeshProUGUI> targetTexts = new();
+    public List<Camera> targetCameras = new();
 }
 
 public class ThemeApplier : MonoBehaviour
@@ -50,6 +51,11 @@ public class ThemeApplier : MonoBehaviour
             foreach (var txt in group.targetTexts.Where(txt => txt))
             {
                 txt.color = targetColor;
+            }
+
+            foreach (var cam in group.targetCameras.Where(cam => cam))
+            {
+                cam.backgroundColor = targetColor;
             }
         }
     }
